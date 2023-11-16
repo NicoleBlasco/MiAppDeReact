@@ -10,9 +10,9 @@ function Body() {
   const amountOfColumns = 5;
   const amountOfRows = 6;
 
-  const fiveLetterAnswer = fiveLettersRandomWords
-    ? fiveLettersRandomWords[0]
-    : "apple";
+  const fiveLetterAnswer = fiveLettersRandomWords.length
+    ? fiveLettersRandomWords[0].toUpperCase()
+    : "APPLE";
 
   useEffect(() => {
     fetch("https://random-word-api.herokuapp.com/word?length=5&number=10")
