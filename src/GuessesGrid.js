@@ -1,6 +1,6 @@
 import React from "react";
 import { range } from "./utils";
-import { SimpleGrid, Box } from "@chakra-ui/react";
+import { SimpleGrid, Box, Text } from "@chakra-ui/react";
 
 function GuessesGrid({
   guesses,
@@ -47,7 +47,9 @@ function GuessesGrid({
                         width: "60px",
                       }}
                     >
-                      {guesses[rowIndex].guessValue[columnIndex]}
+                      <Text style={{ textAlign: "center", fontWeight: "bold" }}>
+                        {guesses[rowIndex].guessValue[columnIndex]}
+                      </Text>
                     </Box>
                   ) : (
                     <Box

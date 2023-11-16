@@ -86,8 +86,8 @@ function Body() {
               value={inputValue}
               onChange={handleInputChange}
               size="lg"
-              minLength={5}
-              maxLength={amountOfColumns}
+              pattern="[A-Z]{5}"
+              title="5 letter uppercase word"
             />
           </>
         )}
